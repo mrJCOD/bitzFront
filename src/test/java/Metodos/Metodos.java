@@ -1,6 +1,7 @@
 package Metodos;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.awt.Dimension;
 import java.io.File;
@@ -75,10 +76,10 @@ public class Metodos extends configDriver{
 
 	}
 	
-	public void validarTextoElemento(By elemento) {
+	public void validarElementoVisivel(By elemento) {
 		
-		String textoRecebido = driver.findElement(elemento).getText();
-		assertEquals("Seu amigo recebe R$ 10,00 ativando a conta e você ganha R$ 10,00 depois que ele fizer a primeira transação.", textoRecebido);
+		boolean element = driver.findElement(elemento).isDisplayed();
+		assertTrue(element);
 	}
 
 	public void logarNoApp() {
