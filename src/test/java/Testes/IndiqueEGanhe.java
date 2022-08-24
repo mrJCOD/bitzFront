@@ -28,7 +28,6 @@ public class IndiqueEGanhe extends Metodos {
 
 		clicar(By.id("br.com.carson.android.bitz.hml:id/ibMenu"));
 		clicar(By.id("br.com.carson.android.bitz.hml:id/groupMemberGetMember"));
-		validarTexto(By.id("br.com.carson.android.bitz.hml:id/tvMgmTitle"), "Indique e ganhe R$ 10,00");
 		validarTexto(By.id("br.com.carson.android.bitz.hml:id/btKnowMore"), "Saiba como funciona");
 		validarTexto(By.id("br.com.carson.android.bitz.hml:id/btInviteFriends"), "Indicar amigo");
 
